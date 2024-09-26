@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1, h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+section {
+    margin-top: 2rem;
+}
+
+button {
+    font-family: 'Lobster', cursive;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Tambahan untuk warna tema glamour */
+.bg-gold {
+    background-color: #ffd700; /* Emas */
+}
+
+.border-gold {
+    border-color: #ffd700; /* Emas */
+}
+
+.bg-black {
+    background-color: #000; /* Hitam */
+}

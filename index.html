@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="no-scroll bg-black text-white">
+    <div id="hero"
+        class="flex flex-col items-center justify-center h-screen bg-cover bg-center transition-all duration-1000 fade-in border-4 border-gold rounded-lg p-4"
+        style="background-image: url('img/blackBG.jpg');">
+        <h2 class="text-6xl md:text-7xl text-gold mt-2 animate-fade-in text-center">Zulfi Sidqil Wafa S.kom</h2>
+        <h1 class="text-5xl md:text-6xl text-gold font-bold animate-fade-in text-center">&</h1>
+        <h2 class="text-6xl md:text-7xl text-gold mt-2 animate-fade-in text-center">Shalwa Raudatul Madinah S.ked</h2>
+
+        <div class="text-center mt-4">
+            <h3 class="text-3xl">Kepada Yth.</h3>
+            <h4 class="text-xl">Bapak/Ibu/Sdr/i</h4>
+            <h4 class="text-xl">(Nama Tamu)</h4>
+            <h4 class="text-xl">di Tempat</h4>
+        </div>
+
+        <button id="startButton"
+            class="mt-5 px-6 py-3 bg-gold text-black rounded-lg shadow-lg hover:bg-yellow-600 transform transition duration-300">Buka
+            Amplop</button>
+
+        <audio id="music" src="musik/bersamamu.mp3" preload="auto"></audio>
+    </div>
+
+    <section id="invitation" class="hidden py-10 px-4 bg-cover bg-center border-4 border-gold rounded-lg"
+        style="background-image: url('img/blackBG.jpg');">
+        <div class="text-center">
+            <h2 class="text-4xl text-gold font-semibold mb-2">Kami Mengundang</h2>
+            <h3 class="text-3xl text-gold mb-2">Bapak/Ibu/Sdr/i</h3>
+            <h4 class="text-3xl text-gold mb-4">untuk menghadiri</h4>
+            <h2 class="text-4xl text-gold font-semibold mb-4">Pernikahan Kami</h2>
+            <img src="img/zulfi-shalwa.jpg" alt="Zulfi dan Shalwa"
+                class="w-80 h-auto mx-auto rounded-lg shadow-lg mb-4">
+            <h2 class="text-4xl text-gold font-semibold mb-4">ZULFI & SHALWA</h2>
+            <h3 class="text-2xl text-gold mb-4">Tanggal Pernikahan</h3>
+            <div id="countdown" class="text-2xl text-gold font-bold mb-4">00:00:00</div>
+            <button
+                class="px-6 py-2 bg-gold text-black rounded-lg shadow-lg hover:bg-yellow-600 transform transition duration-300">Save
+                the Date</button>
+        </div>
+    </section>
+
+    <section id="story" class="hidden py-10 px-4 bg-cover bg-center border-4 border-gold rounded-lg"
+        style="background-image: url('img/blackBG.jpg');">
+        <h2 class="text-4xl text-gold mb-4 text-center">The Wedding Of</h2>
+
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="flex flex-col items-center mx-4">
+                <img src="img/z.jpg" alt="Zulfi" class="w-48 h-72 rounded-lg shadow-lg mb-2">
+                <h3 class="text-2xl text-gold">ZULFI (upi)</h3>
+                <p class="text-center mt-2">Sebagai pasangan, saya merasa sangat beruntung memiliki Shalwa di sisi saya.
+                    Dia adalah sumber inspirasi dan kekuatan dalam hidup saya.</p>
+            </div>
+            <div class="flex flex-col items-center mx-4">
+                <img src="img/s.jpg" alt="Shalwa" class="w-48 h-72 rounded-lg shadow-lg mb-2">
+                <h3 class="text-2xl text-gold">SHALWA (awa)</h3>
+                <p class="text-center mt-2">Zulfi adalah teman terbaik dan pasangan yang selalu mendukung saya. Kami
+                    saling melengkapi dan menciptakan kebahagiaan bersama.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="meeting" class="hidden py-10 px-4 bg-cover bg-center border-4 border-gold rounded-lg"
+        style="background-image: url('img/blackBG.jpg');">
+        <h2 class="text-3xl text-gold mb-4 text-center">Cerita Pertemuan Kami</h2>
+        <p class="text-gold text-lg text-center mb-4">
+            Kami pertama kali bertemu di sebuah seminar teknologi di mana Zulfi sebagai pembicara. Shalwa yang sangat
+            tertarik dengan teknologi, menghadiri seminar tersebut untuk menambah pengetahuan.
+        </p>
+        <p class="text-gold text-lg text-center mb-4">
+            Setelah seminar, kami saling berbincang dan menemukan banyak kesamaan, mulai dari hobi hingga visi hidup.
+            Diskusi tersebut berlanjut menjadi pertemanan yang lebih dekat.
+        </p>
+        <p class="text-gold text-lg text-center mb-4">
+            Seiring berjalannya waktu, kami mulai saling mendukung dalam karier masing-masing. Zulfi membantu Shalwa
+            dengan aplikasi kesehatan, sementara Shalwa memberikan pandangan tentang pentingnya kesehatan bagi para
+            profesional di bidang teknologi.
+        </p>
+        <p class="text-gold text-lg text-center mb-4">
+            Dari pertemanan yang erat, rasa sayang kami pun tumbuh. Setiap momen bersama membuat kami lebih yakin bahwa
+            kami adalah pasangan yang saling melengkapi.
+        </p>
+        <p class="text-gold text-lg text-center mb-4">
+            Pada akhirnya, Zulfi melamar Shalwa dalam suasana romantis di taman, di mana mereka pertama kali berbagi
+            cerita impian dan harapan mereka. Dan sekarang, kami siap memulai babak baru dalam hidup kami sebagai
+            pasangan suami istri.
+        </p>
+    </section>
+
+    <section id="map" class="hidden py-10 px-4 bg-cover bg-center border-4 border-gold rounded-lg"
+        style="background-image: url('img/blackBG.jpg');">
+        <h2 class="text-3xl text-gold mb-4 text-center">Lokasi Pernikahan</h2>
+        <div class="flex justify-center">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345099025!2d144.95373631567724!3d-37.81720997975169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11e1b3%3A0x7e6e4d8dca50ebf5!2sMelbourne%20Museum!5e0!3m2!1sen!2sus!4v1615268511845!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <section id="comments" class="hidden py-10 px-4 bg-cover bg-center border-4 border-gold rounded-lg"
+        style="background-image: url('img/blackBG.jpg');" style="background-image: url('glamour-comments.jpg');">
+        <h2 class="text-3xl text-gold mb-4 text-center">Tinggalkan Komentar</h2>
+        <form id="commentsForm" class="max-w-lg mx-auto flex flex-col mb-4">
+            <input type="text" placeholder="Nama Anda" class="mb-4 px-4 py-2 border rounded" required>
+            <textarea placeholder="Komentar Anda" class="mb-4 px-4 py-2 border rounded" required></textarea>
+            <button type="submit"
+                class="px-6 py-2 bg-gold text-black rounded-lg shadow-lg hover:bg-yellow-600 transform transition duration-300">Kirim</button>
+        </form>
+        <div id="commentsContainer"
+            class="overflow-y-scroll max-h-60 border border-gold p-4 max-w-lg mx-auto flex flex-col mb-4">
+            <div class="border-b border-gold mb-2 py-2"><strong>Andi</strong>
+                <p>Selamat untuk kalian berdua!</p>
+            </div>
+            <div class="border-b border-gold mb-2 py-2"><strong>Siti</strong>
+                <p>Semoga pernikahannya bahagia selalu!</p>
+            </div>
+            <div class="border-b border-gold mb-2 py-2"><strong>Rina</strong>
+                <p>Tidak sabar untuk hadir!</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
